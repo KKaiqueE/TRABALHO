@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int vet[5],soma,mult,divi,n,menu;
+    divi=0;
+    soma=0;
+    mult=0;
+
+            for(int i=0;i<5;i++){
+        cout<<" digite numeros ai pro vetor\n";
+           cin>>vet[i];}
+            for(int i=0;i<5;i++){
+                if(vet[i]%2==0){
+                    soma=soma+vet[i];
+                    divi++;
+                    }
+                    }
+                 for(int i=0;i<5;i++){
+                     if(vet[i]%5==0){
+                            mult++;
+                                soma=soma+vet[i];
+                     }  }
+            for(int i=0;i<5;i++){
+                if(vet[i]%2==0&vet[i]%5==0){
+                    divi++;
+                        mult++;
+                            soma=soma+vet[i];}
+                            }
+            while(menu!=5){
+            cout<<" \n   digite 1 para somar                    \n"
+            "  2 para multiplo por 5                       \n"
+            "  3 para saber se sao divisiveis por 2 e 5 \n"
+            "   4 para imprimir os valores digitados    \n"
+            "   5 para sair                             \n";
+            cin>>menu;
+                switch(menu){
+
+                    case 1:
+                      cout<<"\n\n   soma = "<<soma<<"\n\n\n\n\n";
+
+                break;
+
+                                    case 2 :
+                                        cout<<"\n\n   multiplo por 5 =  "<<mult<<"\n\n\n\n\n";
+
+                break;
+                                        case 3:
+                                            cout<<"\n\n   divisivel por 2 =  "<<divi<<"\n\n\n\n\n";
+                break;
+                                            case 4:
+                                                for(int i=0;i<5;i++){
+
+                                                    cout<<"\n"<<vet[i]<<"\n  essa porra ai karalho  \n";
+                                                                                                        }
+                break;}
+
+                    }menu=1;
+
+    return 0;
+}
